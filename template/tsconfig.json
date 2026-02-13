@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Configurações de Compilação para Node Moderno */
+    "target": "ES2022",                                /* Gera JS moderno (Node 18+ suporta nativamente) */
+    "module": "NodeNext",                              /* O melhor suporte para módulos nativos (ESM ou CJS) */
+    "moduleResolution": "node16",                    /* Resolve 'node:http' e exports do package.json corretamente */
+    "lib": ["ES2022"],                                 /* Não inclua "DOM" aqui, pois é backend */
+    
+    /* Pastas */
+    "outDir": "./dist",                                /* Onde o JS compilado vai ficar */
+    "rootDir": "./src",                                /* Onde seu código TS está */
+    
+    /* Strict Type-Checking (Crucial para código funcional seguro) */
+    "strict": true,                                    /* Ativa todas as verificações estritas */
+    "noImplicitAny": true,                             /* Proíbe 'any' implícito */
+    "strictNullChecks": true,                          /* Obriga você a tratar null/undefined */
+    "noUnusedLocals": true,                            /* Erro se declarar variável e não usar */
+    "noUnusedParameters": true,                        /* Erro se declarar argumento e não usar */
+    
+    /* Interop */
+    "esModuleInterop": true,                           /* Facilita importação de libs CommonJS antigas se precisar */
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,                              /* Pula verificação de tipos dentro de node_modules (mais rápido) */
+
+    /* Força o TS a olhar para os tipos do Node instalados aqui */
+    "types": ["node"]
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

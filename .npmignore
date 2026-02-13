@@ -1,0 +1,9 @@
+# .npmignore
+node_modules
+**/node_modules
+*.log
+.DS_Store
+dist
+src
+tsconfig.tsbuildinfo
+./template/node_modules

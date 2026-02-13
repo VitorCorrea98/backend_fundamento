@@ -1,0 +1,21 @@
+{
+  "name": "backend-ts-node",
+  "version": "1.1.1",
+  "description": "CLI para gerar backend Node.js com TypeScript e Programação Funcional",
+  "bin": {
+    "create-backend-funcional": "bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "template",
+    "!template/node_modules"
+  ],
+  "keywords": [
+    "backend",
+    "typescript",
+    "functional",
+    "boilerplate"
+  ],
+  "author": "Seu Nome",
+  "license": "ISC"
+}
